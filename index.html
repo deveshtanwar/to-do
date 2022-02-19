@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>To-Do</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>Developed By Devesh Tanwar with &#10084;  Copyright 	&copy; 2022 </header>
+        <div class="container">
+            <div class="heading"><p>To-Do</p></div>
+
+            <div class="mssg-container">
+                <p id="mssg"></p>
+            </div>
+
+            <form id="my_form">
+                <input type="text" id="enter_val">
+                <input type="button" value="Submit" id="submit">
+            </form>
+    
+            <div class="list">
+                <table>
+                    <thead>
+                        <td colspan="2">SNo.</td>
+                        <td colspan="1">Item</td>
+                        <td colspan="2">Action</td>
+                    </thead>
+                    <tbody id="root"></tbody>
+                </table>
+                <p id="clear">Clear All Items</p>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

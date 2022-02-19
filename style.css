@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: rgb(241,245,248);
+}
+
+.container{
+    min-height: 200px;
+    width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.19);
+}
+
+table{
+    margin: auto;
+}
+
+.alert-danger{
+    color : #721c24;
+    background-color: #f8d7da;
+}
+
+.alert-success{
+    color : #155724;
+    background-color: #d4edda;
+}
+
+.heading > p{
+    margin: 10px;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    font-family: 'Arial';
+    color: rgb(7,50,81);
+}
+
+.mssg-container{
+    height: 30px;
+}
+
+#enter_val{
+    margin: 5px;
+    padding: 5px;
+    width: 500px;
+    border: 2px solid rgb(15, 86, 136);
+    background-color: rgb(241,245,248);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#submit{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(165,213,249);
+    color: rgb(7,50,81);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#submit:hover{
+    border: 2px solid rgb(7,50,81);
+    cursor: pointer;
+}
+
+.list{
+    display: none;
+}
+
+.list-show{
+    display: block;
+}
+
+thead{
+    background-color: rgb(195, 229, 255);
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+tbody{
+    text-align: left;
+    margin-left: 3px;
+    background-color: rgb(241,245,248);
+    font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+table, tr, td{
+    width: 500px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+#clear{
+    width: 120px;
+    padding: 5px;
+    margin: auto;
+    color : #721c24;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#clear:hover{
+    cursor: pointer;
+    background-color: #f8d7da;
+    border-radius: 5px;
+}
+
+/* Responsive */
+
+@media screen and (max-width : 1350px){
+    .container{
+        width: 332px;
+    }
+
+    header{
+        font-size: 17px;
+    }
+
+    #enter_val{
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    
+    table, tr, td{
+        width: 300px;
+    }
+}
