@@ -5,6 +5,7 @@
 }
 
 header{
+    margin: 5px;
     text-align: center;
     color: gray;
     font-size: 20px;
@@ -125,6 +126,7 @@ table, tr, td{
     }
 
     header{
+        margin: 5px;
         font-size: 17px;
     }
 

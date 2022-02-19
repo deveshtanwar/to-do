@@ -12,7 +12,7 @@ window.onload = init();
 
 function init (){
     let arr = get_crud_data();
-    if(arr != null){
+    if(arr.length != 0){
         list.classList.add("list-show");
     }
 }   
@@ -33,7 +33,7 @@ function manageData(){
         list.classList.add('list-show')
         if(id == 'no'){
             let arr = get_crud_data();
-            if(arr == null){
+            if(arr.length == 0){
                 let data = [input];
                 set_crud_data(data);
             }
@@ -42,6 +42,7 @@ function manageData(){
                 arr.push(input);
                 set_crud_data(arr);
             }
+
             mssg_display("Item added", "success");
             form.reset();
         }
@@ -96,7 +97,7 @@ function delete_data(rid){
     display();
     mssg_display("Item Deleted", "danger");
     arr = get_crud_data();
-    if(arr == null){
+    if(arr.length == 0){
         list.classList.remove('list-show');
     }
 }
