@@ -33,7 +33,7 @@ function manageData(){
         list.classList.add('list-show')
         if(id == 'no'){
             let arr = get_crud_data();
-            if(arr == null){
+            if(arr.lenght == 0){
                 let data = [input];
                 set_crud_data(data);
             }
