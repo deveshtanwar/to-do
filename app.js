@@ -12,7 +12,7 @@ window.onload = init();
 
 function init (){
     let arr = get_crud_data();
-    if(arr.length != 0){
+    if(arr != null){
         list.classList.add("list-show");
     }
 }   
@@ -33,7 +33,7 @@ function manageData(){
         list.classList.add('list-show')
         if(id == 'no'){
             let arr = get_crud_data();
-            if(arr.length == 0){
+            if(arr == null){
                 let data = [input];
                 set_crud_data(data);
             }
